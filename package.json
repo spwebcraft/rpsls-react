@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "//": "the option [watch] is a boolean, existence means watch",
-    "build": "browserify --extension=.jsx -t [ babelify --comments=false --compact =true --presets [ es2015 react ] ] v2/*.jsx | uglifyjs -cm > /mnt/e/Projects/meetingprotocol/mmp/code/symfony/web/scripts/react/script.js",
-    "watch": "watchify --extension=.jsx -t [ babelify --presets [ es2015 react ] ] v2/*.jsx -o /mnt/e/Projects/meetingprotocol/mmp/code/symfony/web/scripts/react/script.js -dv"
+    "build": "browserify --extension=.jsx -t [ babelify --comments=false --compact =true --presets [ es2015 react ] ] src/*.jsx | uglifyjs -cm > /mnt/e/Projects/meetingprotocol/mmp/code/symfony/web/scripts/react/script.js",
+    "watch": "watchify --extension=.jsx -t [ babelify --presets [ es2015 react ] ] src/*.jsx -o /mnt/e/Projects/meetingprotocol/mmp/code/symfony/web/scripts/react/script.js -dv"
   },
   "repository": {
     "type": "git",
